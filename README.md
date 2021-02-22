@@ -20,6 +20,9 @@
 CREATE KEYSPACE mykeyspace
 WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
 
+# Set the keyspace
+use mykeyspace
+
 # Create a Table using Cqlsh
 
 CREATE TABLE Product( id int PRIMARY KEY, name text);

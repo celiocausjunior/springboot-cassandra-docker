@@ -1,8 +1,18 @@
 # springboot-cassandra-docker
 
-#Before running application, run docker-compose and up Cassandra Database:
+# Before running application, run docker-compose and up Cassandra Database:
+-> docker-compose up
 
-docker-compose up
+# Then run cassandra on bash
+-> docker exec -it <container id> bash
+ 
+ or 
+ (windows) 
+ -> winpty docker exec -it <container id> bash
+ 
+ 
+ # Enter on CQLSH
+ -> cqlsh
 
 # Creating a Keyspace using Cqlsh
 # A keyspace in Cassandra is a namespace that defines data replication on nodes. A cluster contains one keyspace per node. Given below is the syntax for creating a keyspace using the statement CREATE KEYSPACE.

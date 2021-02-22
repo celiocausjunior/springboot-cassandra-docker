@@ -4,11 +4,11 @@
 -> docker-compose up
 
 # Then run cassandra on bash
--> docker exec -it <container id> bash
+-> docker exec -it 'container id' bash
  
  or 
  (windows) 
- -> winpty docker exec -it <container id> bash
+ -> winpty docker exec -it 'container id' bash
  
  
  # Enter on CQLSH
